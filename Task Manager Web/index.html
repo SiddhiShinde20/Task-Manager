@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌈 Colorful Task Manager</h1>
+    
+    <!-- Input Section -->
+    <div class="task-input">
+      <input type="text" id="taskName" placeholder="Task Name">
+      <input type="date" id="taskDate">
+      <select id="taskCategory">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+      <button id="addTask">Add Task</button>
+    </div>
+
+    <!-- Search Section -->
+    <input type="text" id="searchTask" placeholder="Search Task" onkeyup="searchTask()">
+
+    <!-- Task List -->
+    <div id="taskList" class="task-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
